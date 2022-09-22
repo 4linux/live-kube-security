@@ -1,6 +1,7 @@
 # Live: Segurança em cluster Kubernetes
 
 ## Preparando o lab da Live
+
 1. Instalar o Virtualbox:
 https://www.virtualbox.org/wiki/Downloads
 
