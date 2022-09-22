@@ -1,10 +1,13 @@
 sudo k3s kubectl create deploy supermario --image=pengbai/docker-supermario
+
 sudo k3s kubectl get pods
 
 sudo k3s kubectl expose deploy supermario --port=8600 --target-port=8080
+
 sudo k3s kubectl get service supermario
 
 sudo k3s kubectl create ingress supermario --rule="supermario-192-168-56-100.nip.io/*=supermario:8600"
+
 sudo k3s kubectl get ingress
 
 Acessar no navegador:
