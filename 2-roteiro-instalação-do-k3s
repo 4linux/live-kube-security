@@ -1,0 +1,5 @@
+curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="--node-ip=192.168.56.100 --flannel-iface=enp0s8" sh -
+
+sudo k3s kubectl get nodes
+
+sudo k3s kubectl get pods -A
