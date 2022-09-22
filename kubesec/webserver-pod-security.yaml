@@ -6,8 +6,8 @@ metadata:
     run: webserver
   name: webserver
   annotations:
-    container.seccomp.security.alpha.kubernetes.io/pod: '*'
-    container.apparmor.security.beta.kubernetes.io/nginx: '*'
+    container.seccomp.security.alpha.kubernetes.io/pod: 'localhost/webserver'
+    container.apparmor.security.beta.kubernetes.io/webserver: 'localhost/docker-nginx'
 spec:
   serviceAccountName: operator
   containers:
