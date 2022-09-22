@@ -11,8 +11,10 @@ https://www.virtualbox.org/wiki/Downloads
 https://storage.googleapis.com/4540-repositorio/live-kube-security.ova
 
 3. Logar na máquina virtual kube-security com o usuário e senha vagrant. Exemplo:
-ssh vagrant@192.168.56.100
 
+```bash
+ssh vagrant@192.168.56.100
+```
 
 ## Ementa da Live
 - Preparando o lab da Live
