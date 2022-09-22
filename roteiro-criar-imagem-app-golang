@@ -12,4 +12,12 @@ sudo docker container run -d --name app app-golang
 
 sudo docker container exec -it app id
 
+sudo docker container exec -it app sh
+
+ls
+
+rm -rf /etc/fstab
+
+exit
+
 sudo docker container rm -f app
