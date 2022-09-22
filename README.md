@@ -5,7 +5,7 @@
 1. Instalar o Virtualbox:
 https://www.virtualbox.org/wiki/Downloads
 
-2- Baixar e importar o Appliance da Live no Virtualbox:
+2. Baixar e importar o Appliance da Live no Virtualbox:
 https://storage.googleapis.com/4540-repositorio/live-kube-security.ova
 
 ## Ementa da Live
