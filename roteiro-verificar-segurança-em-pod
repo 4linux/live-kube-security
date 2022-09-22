@@ -1,0 +1,21 @@
+cd
+
+sudo k3s kubectl run webserver --image=nginx --dry-run=client -o yaml > webserver-pod.yaml
+
+cat webserver-pod.yaml
+
+sudo docker container run -i kubesec/kubesec:512c5e0 scan /dev/stdin < webserver-pod.yaml
+
+sudo docker container run -i kubesec/kubesec:512c5e0 scan /dev/stdin < webserver-pod.yaml | head
+
+sudo k3s kubectl apply -f webserver-pod.yaml
+
+sudo k3s kubectl get pods
+
+sudo k3s kubectl exec -it webserver -- id
+
+sudo k3s kubectl exec -it webserver -- id
+
+exit
+
+sudo k3s kubectl delete -f webserver-pod.yaml
