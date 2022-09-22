@@ -3,10 +3,16 @@
 ## Preparando o lab da Live
 
 1. Instalar o Virtualbox:
+
 https://www.virtualbox.org/wiki/Downloads
 
 2. Baixar e importar o Appliance da Live no Virtualbox:
+
 https://storage.googleapis.com/4540-repositorio/live-kube-security.ova
+
+3. Logar na máquina virtual kube-security com o usuário e senha vagrant. Exemplo:
+ssh vagrant@192.168.56.100
+
 
 ## Ementa da Live
 - Preparando o lab da Live
