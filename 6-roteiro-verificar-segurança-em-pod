@@ -14,7 +14,11 @@ sudo k3s kubectl get pods
 
 sudo k3s kubectl exec -it webserver -- id
 
-sudo k3s kubectl exec -it webserver -- id
+sudo k3s kubectl exec -it webserver -- sh
+
+echo 'nameserver 0.0.0.0' > /etc/resolv.conf
+
+curl google.com.br
 
 exit
 
