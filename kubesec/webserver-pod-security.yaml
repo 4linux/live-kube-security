@@ -27,6 +27,17 @@ spec:
       capabilities:
         drop:
         - index(\"ALL\")
+    volumeMounts:
+    - name: cache
+      mountPath: /var/cache/nginx
+      readOnly: false
+    - name: run
+      mountPath: /var/run
+      readOnly: false
+  volumes:
+  - name: cache
+    emptyDir: {}
+  - name: run
+    emptyDir: {}
   dnsPolicy: ClusterFirst
   restartPolicy: Always
-status: {}
