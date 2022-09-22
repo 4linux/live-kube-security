@@ -1,0 +1,15 @@
+git clone https://github.com/4linux/live-kube-security
+
+cd live-kube-security/app-golang/
+
+cat Dockerfile
+
+sudo docker image build -t app-golang .
+
+sudo docker image ls
+
+sudo docker container run -d --name app app-golang
+
+sudo docker container exec -it app id
+
+sudo docker container rm -f app
