@@ -10,7 +10,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 https://storage.googleapis.com/4540-repositorio/live-kube-security.ova
 
-3. Logar na máquina virtual kube-security com o usuário e senha vagrant. Exemplo:
+3. Logar na máquina virtual **kube-security** com o usuário e senha **vagrant**. Exemplo:
 
 ```bash
 ssh vagrant@192.168.56.100
