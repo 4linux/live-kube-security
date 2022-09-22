@@ -1,0 +1,23 @@
+cd
+
+sudo cp -a live-kube-security/apparmor/docker-nginx /etc/apparmor.d/
+
+cd live-kube-security/kubesec/
+
+cat webserver-pod-security.yaml
+
+sudo docker container run -i kubesec/kubesec:512c5e0 scan /dev/stdin < webserver-pod-security.yaml
+
+sudo k3s kubectl apply -f webserver-pod-security.yaml
+
+sudo k3s kubectl get pods
+
+sudo k3s kubectl exec -it webserver -- id
+
+sudo k3s kubectl exec -it webserver -- sh
+
+echo 'nameserver 0.0.0.0' > /etc/resolv.conf
+
+exit
+
+sudo k3s kubectl delete -f webserver-pod-security.yaml
