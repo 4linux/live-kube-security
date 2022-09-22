@@ -1,0 +1,21 @@
+cd ../app-golang-security
+
+cat Dockerfile
+
+sudo docker image build -t app-golang:security .
+
+sudo docker image ls
+
+sudo docker container run -d --name app app-golang:security
+
+sudo docker container exec -it app id
+
+sudo docker container exec -it app sh
+
+sudo docker container rm -f app
+
+sudo docker container run --name app app-golang:security
+
+Use o CTRL + C para cancelar a execução do container.
+
+sudo docker container rm -f app
