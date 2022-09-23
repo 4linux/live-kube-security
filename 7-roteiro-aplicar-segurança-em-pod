@@ -8,6 +8,8 @@ cat webserver-pod-security.yaml
 
 sudo docker container run -i kubesec/kubesec:512c5e0 scan /dev/stdin < webserver-pod-security.yaml
 
+sudo k3s kubectl create sa operator
+
 sudo k3s kubectl apply -f webserver-pod-security.yaml
 
 sudo k3s kubectl get pods
