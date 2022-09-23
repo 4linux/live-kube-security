@@ -2,6 +2,8 @@ cd
 
 sudo cp -a live-kube-security/apparmor/docker-nginx /etc/apparmor.d/
 
+sudo apparmor_parser -r -W /etc/apparmor.d/docker-nginx
+
 cd live-kube-security/kubesec/
 
 cat webserver-pod-security.yaml
